@@ -14,9 +14,13 @@
 
 		<script type="text/javascript">
 			
-			$.ajax("info.txt").done(function(data) {
+			$.ajax("infoo.txt").done(function(data) {
 
 				alert(data);
+
+			}).fail(function() {
+
+				alert("Unable to retrieve data.");
 
 			})
 
