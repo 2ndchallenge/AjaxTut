@@ -18,7 +18,11 @@
 			
 			$.ajax("info.txt").done(function(data) {
 
-				document.getElementById("infoText").innerHTML = data;
+				// Javascript style
+				// document.getElementById("infoText").innerHTML = data;
+
+				//jQuery style
+				$("p").html(data);
 
 			}).fail(function() {
 
