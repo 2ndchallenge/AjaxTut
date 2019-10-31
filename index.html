@@ -12,11 +12,13 @@
 
 	<body>
 
+		<p id=infoText>Bob</p>
+
 		<script type="text/javascript">
 			
 			$.ajax("info.txt").done(function(data) {
 
-				alert(data);
+				document.getElementById("infoText").innerHTML = data;
 
 			}).fail(function() {
 
